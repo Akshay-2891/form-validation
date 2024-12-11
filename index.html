@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM VALIDATION</title>
+    <link rel="stylesheet" href="style.css">   
+</head>
+<body>
+    <fieldset>
+        <legend>REGISTRATION FORM</legend>
+        <form id="registrationForm">
+            <div>
+                <label>First Name :</label>
+                <input type="text" name="fname" class="form-control" id="first_name" placeholder="Enter your First Name"/>
+            </div>
+            <div>
+                <label>Middle Name (optional) :</label>
+                <input type="text" name="mname" class="form-control" id="middle_name" placeholder="Enter your Middle Name"/>
+            </div>
+            <div>
+                <label>Last Name :</label>
+                <input type="text" name="lname" class="form-control" id="last_name" placeholder="Enter your Last Name"/>
+            </div>
+            <div>
+                <label>Email id :</label>
+                <input type="email" name="email" class="form-control" id="email" placeholder="Enter your Email id"/>
+            </div>
+            <div>
+                <label>Confirm email id :</label>
+                <input type="email" name="confemail" class="form-control" id="confirm-email" placeholder="Re-enter your Email id"/>
+            </div>
+            <div>
+                <label>Mobile Number :</label>
+                <input type="text" name="mobileenum" class="form-control" id="mobile-number" pattern="[0-9]{10}" maxlength="10" placeholder="Enter your Mobile Number"/>
+            </div>
+            <div>
+                <label>Password :</label>
+                <input type="password" name="password" class="form-control" id="password" placeholder="Enter your password"/>
+            </div>
+            <div>
+                <label>Confirm password :</label>
+                <input type="password" name="confirmpassword" class="form-control" id="confirm-password" placeholder="Re-enter your Password"/>
+            </div>
+            <div>
+                <label>Gender :</label>
+                <label><input type="radio" name="gender" value="male"/> Male</label>
+                <label><input type="radio" name="gender" value="female"/> Female</label>
+                <label><input type="radio" name="gender" value="other"/> Other</label>
+            </div>
+            <div>
+                <label>Address :</label>
+                <input type="text" name="Address" class="form-control" id="address" placeholder="Type your Address"/>
+            </div>
+            <div class="form-group">
+                <button type="submit" id="submitButton">SUBMIT</button>
+            </div>
+        </form>
+    </fieldset>
+    <script src="script.js"></script>
+</body>
+</html>
